@@ -19,13 +19,13 @@
       group: root
 
   - name: set wallpaper
-    become_user: jay
+    become_user: glen
     dconf:
       key: "/org/gnome/desktop/background/picture-uri"
       value: "'file:///usr/share/backgrounds/ansible-wallpaper.png'"
 
   - name: set wallpaper position
-    become_user: jay
+    become_user: glen
     dconf:
       key: "/org/gnome/desktop/background/picture-options"
       value: "'zoom'"
@@ -33,9 +33,9 @@
   - name: copy .bashrc file
     copy:
      src: files/bashrc
-     dest: /home/jay/.bashrc
-     owner: jay
-     group: jay
+     dest: /home/glen/.bashrc
+     owner: glen
+     group: glen
 
   - name: add ansible user
     user:
