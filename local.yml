@@ -7,9 +7,11 @@
   - name: install packages
     package:
       name:
-        - htop
-        - tmux
-        - vim-nox
+        - dconf-cli
+        - python3-psutil
+        - gedit
+        - qbittorrent
+        - vlc
 
   - name: copy wallpaper file
     copy:
